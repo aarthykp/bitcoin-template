@@ -1,0 +1,120 @@
+.flex-view .log-left{
+	background-color: #03040B;
+}
+.card,.trade-outer .card{
+	background-color: #0c0d16;
+	color: #fff;
+}
+.profile-outer .edit-profile .card-header{
+	border: 1px solid #04040a;
+}
+ul:not(.browser-default){
+	background-color: transparent;
+}
+.profile-outer .user-profile-box .card-content p.flow-text{
+	    color: #eee6e6;
+}
+.profile-outer .user-profile-box .card-content p.center-align {
+    color: #d1d4e4;
+}
+nav .brandneed-help-icon-logo, nav ul a{
+	    color: #d5d8dd;
+}
+nav{
+	border-bottom: 3px solid #0d0d17;
+}
+.profile-outer  .need-help-icon svg{
+	fill:white;
+}
+.profile-outer .timeline__step-marker{
+	box-shadow: none;
+}
+.timeline__step:first-of-type:before, .timeline__step:last-of-type:before{
+	background: #0d0d17;
+}
+.timeline__step-marker{
+	 background: #0d0d17;
+}
+.dropdown-content{
+	background-color: #04040a !important;
+}
+.dropdown-content nav ul.right a:hover {
+    background-color: #0d0d17;
+}
+.select-dropdown li.disabled>span{
+	color: #ee6e73 !important;
+}
+body{
+	background-color: #03040B;
+}
+table.highlight>tbody>tr:hover {
+    background-color: #04040a;
+}
+#mediumwidget .tv-widget-chart{
+    background: #04040a !important;
+    border: 2px solid #0d0d17 !important;
+}
+.trade-outer .head-splits p{
+	color: #fff;
+}
+.orders-otr .banner{
+	background-color: #0c0d16;
+    color: #fff;
+}
+.mdl-data-table{
+	background-color: transparent;
+}
+.side-nav{
+	background-color: #020306 !important;
+}
+.side-nav li>a{
+      color:#f74a62;
+    font-weight: 600;
+}
+nav .button-collapse i{
+	color: #d03e6c;
+}
+ul.stepper.horizontal .step-actions{
+	background-color: #0d0d17 !important;
+}
+.select-wrapper span.caret{
+	color: #fff;
+}
+ul.stepper>.step:not(:last-of-type):after {
+    background-color: rgb(242, 72, 100) !important;
+}
+.trade-outer .head-splits{
+	color: #fff;
+}
+footer{
+	background: #0d0d17;
+    color: #fff;
+}
+footer ul li:first-child{
+	color: #fff;
+}
+footer ul li{
+	color: #9b9797;
+}
+section.about-us{
+	color: #fff;
+}
+.trade-outer .trade-open-order .card p{
+	color: #fff;
+}
+.dash-outer .market-trends .card-header {
+    border-bottom: 1px solid #000;
+    padding: 10px;
+}
+/*------------------
+ * Media Query
+ *------------------*/
+ @media only screen and (max-width: 992px){
+ 	.flex-view .log-right .box-inner h5.primary{
+ 		color: #fff;
+ 	}
+ 	body{
+ 		background: #03040B;
+    	color: #fff;
+ 	}
+ }

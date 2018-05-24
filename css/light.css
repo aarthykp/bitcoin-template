@@ -1,0 +1,10 @@
+.flex-view .log-left{
+	background-color: #eff3f7;
+	color: #000;
+}
+.flex-view .log-left .box-inner p{
+	color: #000;
+}
+/*------------------
+ * Media Query
+ *------------------*/

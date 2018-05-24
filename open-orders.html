@@ -1,0 +1,263 @@
+  <!DOCTYPE html>
+    <html>
+      <head>
+        <title>Open Orders</title>
+        <meta title="">
+        <meta descrpition="">
+        <meta keywords="">
+        <!--Import Google Icon Font-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!--Import materialize.css-->
+        <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+        <link type="text/css" rel="stylesheet" href="css/style.css"  
+        media="screen,projection"/>
+         <!-- Color Skin -->
+        <link rel="stylesheet" type="text/css" id="cpswitch" href="css/default.css">
+        <link rel="stylesheet" type="text/css" href="css/tablesorter.css">
+           <link rel="stylesheet" href="https://cdn.datatables.net/1.10.16/css/dataTables.bootstrap4.min.css">
+        <!--Let browser know website is optimized for mobile-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      </head>
+
+      <body id="wrapper">
+        <!--Colorpanel-->
+        <div id="colorPanel" class="colorPanel">
+            <a id="cpToggle" href="#"></a>
+            <ul></ul>
+        </div>
+        <!--header-->
+        <nav>
+          <div class="nav-wrapper">
+            <a href="#!" class="brand-logo">Logo</a>
+            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+              <li><a href="profile.html">Profile</a></li>
+              <li class="drop-otr">
+                <a class='dropdown-button menu-drp" href='#' data-activates='dropdown1'>Orders
+                <i class="material-icons">arrow_drop_down</i></a>
+                <ul id='dropdown1' class='dropdown-content'>
+                  <li><a href="trade-history.html">Trade History</a></li>
+                  <li><a href="transaction-history.html">Transaction History</a></li>
+                  <li><a href="open-orders.html">Open Orders</a></li>
+                  <li><a href="order-history.html">Order History</a></li>
+                </ul>
+              </li>
+              <li><a href="trade.html">Trade</a></li>
+              <li><a href="deposit.html">Deposit</a></li>
+              <li><a href="withdraw.html">Withdraw</a></li>
+            </ul>
+            <ul class="side-nav" id="mobile-demo">
+              <li><a href="profile.html">Profile</a></li>
+              <li><a href="trade-history.html">Trade History</a></li>
+              <li><a href="transaction-history.html">Transaction History</a></li>
+              <li><a href="open-orders.html">Open Orders</a></li>
+              <li><a href="order-history.html">Order History</a></li>
+              <li><a href="market.html">Market</a></li>
+              <li><a href="reward-history.html">Reward History</a></li>
+              <li><a href="kyc.html">KYC</a></li>
+              <li><a href="deposit.html">Deposit</a></li>
+              <li><a href="withdraw.html">Withdraw</a></li>
+            </ul>
+          </div>
+        </nav>
+        <!--header-->
+        <!--main-->
+        <main>
+        <!--open-orders-otr-starts-->
+        <section class="orders-otr">
+            <div class="container">
+                <div class="row">
+                    <div class="banner">
+                      <div class="banner-inner">
+                        <p class="flow-text center-align">Open Orders</p>
+                        <p class="caption">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                      </div>
+                    </div>
+                    <div class="card table-otr cus-sb">
+                      <table  class="info-data-table table " >
+                      <thead>
+                          <tr>
+                              <th>Date</th>
+                                <th>Pair</th>
+                                <th>Type</th>
+                                <th>Sider</th>
+                                <th>Price</th>
+                                <th>Amount</th>
+                                <th>Filled %</th>
+                                <th>Total</th>
+                                <th>Trigger Conditions</th>
+                                <th>Action</th>
+                          </tr>
+                      </thead>
+                      <tbody>
+                                <tr>
+                                    <td>10-5-18</td>
+                                    <td>Bitcoin</td>
+                                    <td>BTC</td>
+                                    <td>0.00000024</td>
+                                    <td>0.00000024</td>
+                                    <td>0.00000024</td>
+                                    <td>0.01%</td>
+                                    <td>0.00000084</td>
+                                    <td>Condition</td>
+                                    <td>
+                                        <a href="" class="outline-btn">Cancel</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>10-5-18</td>
+                                    <td>Bitcoin</td>
+                                    <td>BTC</td>
+                                    <td>0.00000024</td>
+                                    <td>0.00000024</td>
+                                    <td>0.00000024</td>
+                                    <td>0.01%</td>
+                                    <td>0.00000084</td>
+                                    <td>Condition</td>
+                                    <td>
+                                        <a href="" class="outline-btn">Cancel</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>10-5-18</td>
+                                    <td>Bitcoin</td>
+                                    <td>BTC</td>
+                                    <td>0.00000024</td>
+                                    <td>0.00000024</td>
+                                    <td>0.00000024</td>
+                                    <td>0.01%</td>
+                                    <td>0.00000084</td>
+                                    <td>Condition</td>
+                                    <td>
+                                        <a href="" class="outline-btn">Cancel</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>10-5-18</td>
+                                    <td>Bitcoin</td>
+                                    <td>BTC</td>
+                                    <td>0.00000024</td>
+                                    <td>0.00000024</td>
+                                    <td>0.00000024</td>
+                                    <td>0.01%</td>
+                                    <td>0.00000084</td>
+                                    <td>Condition</td>
+                                    <td>
+                                        <a href="" class="outline-btn">Cancel</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>10-5-18</td>
+                                    <td>Bitcoin</td>
+                                    <td>BTC</td>
+                                    <td>0.00000024</td>
+                                    <td>0.00000024</td>
+                                    <td>0.00000024</td>
+                                    <td>0.01%</td>
+                                    <td>0.00000084</td>
+                                    <td>Condition</td>
+                                    <td>
+                                        <a href="" class="outline-btn">Cancel</a>
+                                    </td>
+                                </tr>
+                      </tbody>
+                      </table>
+                    </div>
+                </div><!--row-->
+            </div>
+        </section>
+        <!--open-orders-otr-ends-->
+        </main>
+        <!--main-->
+        <!--footer-starts-->
+         <footer class="z-depth-1">
+        <div class="container">
+          <div class="row">
+            <div class="col l8 m8 s12">
+              <div class="row">
+                <div class="col l4 m6 s12">
+                  <div class="footer-links">
+                    <ul>
+                      <li>About Us</li>
+                      <li><a href="#"></a>Contact us</li>
+                      <li><a href="#"></a>Fees</li>
+                      <li><a href="#"></a>Privacy Policy</li>
+                      <li><a href="#"></a>Terms of use</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col l4 m6 s12">
+                  <div class="footer-links">
+                    <ul>
+                      <li>SUPPORT</li>
+                      <li><a href="#"></a>Contact Support</li>
+                      <li><a href="#"></a>Support Resource</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col l4 m6 s12">
+                  <div class="footer-links">
+                    <ul>
+                      <li>NEWS</li>
+                      <li><a href="#"></a>Press Releases</li>
+                      <li><a href="#"></a>Social Media</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col l4 m4 s12">
+              <div class="theme-address">
+                <address>
+                  <p>Bitcoin</p>
+                  <p>Server time: 2018-03-15 07:26 UTC</p>
+                  <p>Users currently online: 11029</p>
+                  <p>24hr Volume: 10406 BTC / 1273 ETH / 608 XMR / 96536568 USDT</p>
+                  <p>&copy; 2018 bitexchangethemes All Rights Reserved</p>
+                </address>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+        <!--footer-ends-->
+        <!--Import jQuery before materialize.js-->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="js/materialize.min.js"></script>
+        <script type="text/javascript" src="js/myscript.js"></script>
+        <script type="text/javascript" src="js/jquery.colorpanel.js"></script>
+         <script type="text/javascript " language="javascript " src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js ">
+       </script>
+      <script type="text/javascript " language="javascript " src="https://cdn.datatables.net/1.10.16/js/dataTables.bootstrap4.min.js "></script>
+        <script type="text/javascript" src="http://tablesorter.com/__jquery.tablesorter.min.js"></script>
+        <script>
+          $(document).ready(function() 
+            { 
+                $("#myTable").tablesorter(); 
+                $("#myTable1").tablesorter(); 
+                $("#myTable2").tablesorter(); 
+                $("#myTable3").tablesorter(); 
+            } 
+        ); 
+        </script>
+        <script>
+          $(document).ready(function() {
+               $('.info-data-table').DataTable({
+                "bLengthChange": false,
+               });
+          } );
+        </script>
+        <script type="text/javascript">
+        $(document).ready(function($) {
+            $('#colorPanel').ColorPanel({
+                styleSheet: '#cpswitch',
+                animateContainer: '#wrapper',
+                colors: {
+                    '#03040B': 'css/dark.css',
+                    '#ffffff': 'css/light.css',
+                }
+            });
+        });
+        </script>
+      </body>
+    </html>

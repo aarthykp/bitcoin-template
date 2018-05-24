@@ -1,0 +1,121 @@
+nav .brand-logo, nav ul a, nav .button-collapse i {
+    color: #f1f2f4;
+}
+nav{
+	    background-color: #03040B;
+}
+
+nav ul a{
+	position: relative;
+	z-index: 888;
+}
+section.hero-main{
+      background-color: #03040B;
+      color: #fff;
+      padding:3em 0 5em;
+      min-height: 400px;
+ }
+ section.hero-main h3{
+  margin:0;
+  font-size: 40px;
+  line-height: 50px;
+  padding: 1em 0;
+ }
+ section.hero-main a{
+  display: inline-block;
+  margin: 0 10px 0 0;
+  position: relative;
+  z-index: 888;
+ }
+  section.sub-hero-section{
+  	padding:3em 0;
+  }
+h4{
+	margin:0;
+ 	display: inline-block;
+ 	letter-spacing: 1px;
+    color: #9D262D;
+    background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #fa7f60), color-stop(0.15, #fb6b62), color-stop(0.3, #f74a62), color-stop(0.45, #cc3e6e), color-stop(0.6, #ad3b76),color-stop(0.75, #9a3b7d), color-stop(0.9, #9a3b7d), color-stop(1,#9a3b7d) );
+    background-image: gradient( linear, left top, right top, color-stop(0, #fa7f60), color-stop(0.15, #fb6b62), color-stop(0.3,#f74a62), color-stop(0.45, #cc3e6e), color-stop(0.6, #ad3b76),color-stop(0.75, #9a3b7d), color-stop(0.9, #9a3b7d), color-stop(1,#9a3b7d) );
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    margin-bottom: 1em;
+ }
+ section.sub-hero-section .card .icon i{
+ 	font-size: 40px;
+ 	color: #EC798B;
+ }
+section.sub-hero-section .card{
+	padding: 2em;
+	margin:2em 0;
+	transition: all ease 0.5s;
+}
+section.sub-hero-section .card:hover{
+	-webkit-box-shadow: 0 6px 10px 0 rgba(0,0,0,0.14), 0 1px 18px 0 rgba(0,0,0,0.12), 0 3px 5px -1px rgba(0,0,0,0.3);
+    box-shadow: 0 6px 10px 0 rgba(0,0,0,0.14), 0 1px 18px 0 rgba(0,0,0,0.12), 0 3px 5px -1px rgba(0,0,0,0.3);
+}
+section.sub-hero-section .card p.heading{
+	font-size: 17px;
+    font-weight: 600;
+}
+section.features-otr{
+	background-color: #03040B;
+	padding:3em 0;
+	color: #fff;
+}
+section.features-otr h4 + p{
+	font-size: 15px;
+	line-height: 25px;
+	max-width: 700px;
+	margin:auto;
+}
+section.features-otr .features-inner{
+	padding-left: 40px;
+	position: relative;
+	margin-bottom: 20px;
+}
+section.features-otr .features-inner i{
+	position: absolute;
+	left: 0;
+}
+section.features-otr .features-inner p.caption{
+	font-size: 17px;
+	color: #EC798B;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+section.features-otr div.center-align{
+	margin-bottom: 3em;
+}
+section.features-otr .features-inner .row{
+	margin-bottom: 0;
+}
+#content__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+    height: 480px;
+}
+section.crypto-market,
+section.start-trading,
+section.about-us{
+	padding: 3em 0;
+}
+section.start-trading{
+	background-color: #03040B;
+	color: #fff;
+}
+section.start-trading p.flow-text{
+	margin: 0;
+}
+section.start-trading p.sub-text,
+section.about-us p.sub-text{
+	line-height: 25px;
+	max-width: 700px;
+	margin:1em auto;
+}
+

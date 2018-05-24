@@ -1,0 +1,1816 @@
+  <!DOCTYPE html>
+    <html>
+      <head>
+        <title>Trade</title>
+        <meta title="">
+        <meta descrpition="">
+        <meta keywords="">
+        <!--Import Google Icon Font-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!--Import materialize.css-->
+        <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+        <link type="text/css" rel="stylesheet" href="css/style.css"  
+        media="screen,projection"/>
+         <!-- Color Skin -->
+        <link rel="stylesheet" type="text/css" id="cpswitch" href="css/default.css">
+        <!--table-->
+        <link rel="stylesheet" type="text/css" href="css/tablesorter.css">
+        <link rel="stylesheet" href="https://cdn.datatables.net/1.10.16/css/dataTables.bootstrap4.min.css"><!-- 
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-lite/1.1.0/material.min.css"> -->
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.16/css/dataTables.material.min.css">
+        <!--Let browser know website is optimized for mobile-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      </head>
+
+      <body id="wrapper">
+        <!--Colorpanel-->
+        <div id="colorPanel" class="colorPanel">
+            <a id="cpToggle" href="#"></a>
+            <ul></ul>
+        </div>
+        <!--header-->
+        <nav>
+          <div class="nav-wrapper">
+            <a href="#!" class="brand-logo">Logo</a>
+            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+              <li><a href="profile.html">Profile</a></li>
+              <li class="drop-otr">
+                <a class='dropdown-button menu-drp" href='#' data-activates='dropdown1'>Orders
+                <i class="material-icons">arrow_drop_down</i></a>
+                <ul id='dropdown1' class='dropdown-content'>
+                  <li><a href="trade-history.html">Trade History</a></li>
+                  <li><a href="transaction-history.html">Transaction History</a></li>
+                  <li><a href="open-orders.html">Open Orders</a></li>
+                  <li><a href="order-history.html">Order History</a></li>
+                </ul>
+              </li>
+              <li><a href="trade.html">Trade</a></li>
+              <li><a href="deposit.html">Deposit</a></li>
+              <li><a href="withdraw.html">Withdraw</a></li>
+            </ul>
+            <ul class="side-nav" id="mobile-demo">
+              <li><a href="profile.html">Profile</a></li>
+              <li><a href="trade-history.html">Trade History</a></li>
+              <li><a href="transaction-history.html">Transaction History</a></li>
+              <li><a href="open-orders.html">Open Orders</a></li>
+              <li><a href="order-history.html">Order History</a></li>
+              <li><a href="market.html">Market</a></li>
+              <li><a href="reward-history.html">Reward History</a></li>
+              <li><a href="kyc.html">KYC</a></li>
+              <li><a href="deposit.html">Deposit</a></li>
+              <li><a href="withdraw.html">Withdraw</a></li>
+            </ul>
+          </div>
+        </nav>
+        <!--header-->
+        <!--main-->
+        <main>
+        <!--trade-outer-starts-->
+        <section class="trade-outer">
+          <div class="container">
+            <div class="row">
+              <!--market-view-starts-->
+              <div class="col m12">
+                 <div class="head-splits-outer">
+                    <div class="head-splits name">
+                        <h4 class="title">TRX<span class="gray-color">/BTC</span></h4>
+                        <p>TRON</p>
+                    </div>
+                    <div class="head-splits">
+                        <p class="small gray-color">Last Price</p>
+                        <p class="amount"><strong><span class="green-color">0.00000467</span> $0.05</strong></p>
+                    </div>
+                    <div class="head-splits">
+                        <p class="small gray-color">24h change</p>
+                        <p class="amount"><strong><span class="red-color">-0.00000467</span> -$0.05</strong></p>
+                    </div>
+                    <div class="head-splits">
+                        <p class="small gray-color">24h High</p>
+                        <p class="amount"><strong><span class="gray-color">0.00000467</span> $0.05</strong></p>
+                    </div>
+                    <div class="head-splits">
+                        <p class="small gray-color">24h Low</p>
+                        <p class="amount"><strong><span class="gray-color">-0.00000467</span> -$0.05</strong></p>
+                    </div>
+                    <div class="head-splits">
+                        <p class="small gray-color">24h Volume</p>
+                        <p class="amount"><strong><span class="gray-color">3,4234</span> BTC</strong></p>
+                    </div>
+                  </div>
+              </div>
+              <!--market-view-ends-->
+              <!--trade-part-one-starts-->
+              <div class="col l3 s12">
+                <!--trade-first-part-ends-->
+                <div class="trade-first-part">
+                    <div class="card">
+                      <div class="left-side-widget">
+                          <ul class="tabs">
+                            <li class="tab"><a href="#test1" class="active">
+                              <img src="https://resource.binance.com/resources/img/buy&sell-2.jpg" />
+                            </a></li>
+                            <li class="tab "><a href="#test2">
+                              <img src="https://resource.binance.com/resources/img/buy-1.jpg" />
+                            </a>
+                            </li>
+                          </ul>
+                          <div class="col m12">
+                          <select >
+                            <option value="" disabled selected>Choose your decimal</option>
+                            <option value="1">4 decimal</option>
+                            <option value="2">5 decimal</option>
+                            <option value="3">6 decimal</option>
+                            <option value="4">7 decimal</option>
+                          </select>
+                          </div>
+                          <div id="test1" class="col s12">
+                          <div class="tab-one">
+                             <table class="table highlight">
+                                <thead>
+                                    <tr>
+                                        <th>Price(BTC)</th>
+                                        <th>Amount(TRX)</th>
+                                        <th>Total(BTC)</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><a href="" class="green-color">0.00000481</a></td>
+                                        <td><a href="" class="gray-color">806,380</a></td>
+                                        <td><a href="" class="gray-color">3.87062400</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="" class="green-color">0.00000481</a></td>
+                                        <td><a href="" class="gray-color">806,380</a></td>
+                                        <td><a href="" class="gray-color">3.87062400</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="" class="green-color">0.00000481</a></td>
+                                        <td><a href="" class="gray-color">806,380</a></td>
+                                        <td><a href="" class="gray-color">3.87062400</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="" class="green-color">0.00000481</a></td>
+                                        <td><a href="" class="gray-color">806,380</a></td>
+                                        <td><a href="" class="gray-color">3.87062400</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="" class="green-color">0.00000481</a></td>
+                                        <td><a href="" class="gray-color">806,380</a></td>
+                                        <td><a href="" class="gray-color">3.87062400</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="" class="green-color">0.00000481</a></td>
+                                        <td><a href="" class="gray-color">806,380</a></td>
+                                        <td><a href="" class="gray-color">3.87062400</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="" class="green-color">0.00000481</a></td>
+                                        <td><a href="" class="gray-color">806,380</a></td>
+                                        <td><a href="" class="gray-color">3.87062400</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="" class="green-color">0.00000481</a></td>
+                                        <td><a href="" class="gray-color">806,380</a></td>
+                                        <td><a href="" class="gray-color">3.87062400</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="" class="green-color">0.00000481</a></td>
+                                        <td><a href="" class="gray-color">806,380</a></td>
+                                        <td><a href="" class="gray-color">3.87062400</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="" class="green-color">0.00000481</a></td>
+                                        <td><a href="" class="gray-color">806,380</a></td>
+                                        <td><a href="" class="gray-color">3.87062400</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="" class="green-color">0.00000481</a></td>
+                                        <td><a href="" class="gray-color">806,380</a></td>
+                                        <td><a href="" class="gray-color">3.87062400</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="" class="green-color">0.00000481</a></td>
+                                        <td><a href="" class="gray-color">806,380</a></td>
+                                        <td><a href="" class="gray-color">3.87062400</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="" class="green-color">0.00000481</a></td>
+                                        <td><a href="" class="gray-color">806,380</a></td>
+                                        <td><a href="" class="gray-color">3.87062400</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="" class="green-color">0.00000481</a></td>
+                                        <td><a href="" class="gray-color">806,380</a></td>
+                                        <td><a href="" class="gray-color">3.87062400</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="" class="green-color">0.00000481</a></td>
+                                        <td><a href="" class="gray-color">806,380</a></td>
+                                        <td><a href="" class="gray-color">3.87062400</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="" class="green-color">0.00000481</a></td>
+                                        <td><a href="" class="gray-color">806,380</a></td>
+                                        <td><a href="" class="gray-color">3.87062400</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="" class="green-color">0.00000481</a></td>
+                                        <td><a href="" class="gray-color">806,380</a></td>
+                                        <td><a href="" class="gray-color">3.87062400</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="" class="green-color">0.00000481</a></td>
+                                        <td><a href="" class="gray-color">806,380</a></td>
+                                        <td><a href="" class="gray-color">3.87062400</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="" class="green-color">0.00000481</a></td>
+                                        <td><a href="" class="gray-color">806,380</a></td>
+                                        <td><a href="" class="gray-color">3.87062400</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="" class="green-color">0.00000481</a></td>
+                                        <td><a href="" class="gray-color">806,380</a></td>
+                                        <td><a href="" class="gray-color">3.87062400</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="" class="green-color">0.00000481</a></td>
+                                        <td><a href="" class="gray-color">806,380</a></td>
+                                        <td><a href="" class="gray-color">3.87062400</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="" class="green-color">0.00000481</a></td>
+                                        <td><a href="" class="gray-color">806,380</a></td>
+                                        <td><a href="" class="gray-color">3.87062400</a></td>
+                                    </tr>
+                                </tbody>
+                              </table>
+                          </div>
+                        </div>
+                        <div id="test2" class="col s12">
+                          <div class="tab-two">
+                             <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Price(BTC)</th>
+                                        <th>Amount(TRX)</th>
+                                        <th>Total(BTC)</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><a href="" class="red-color">0.00000481</a></td>
+                                        <td><a href="" class="gray-color">806,380</a></td>
+                                        <td><a href="" class="gray-color">3.87062400</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="" class="red-color">0.00000481</a></td>
+                                        <td><a href="" class="gray-color">806,380</a></td>
+                                        <td><a href="" class="gray-color">3.87062400</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="" class="red-color">0.00000481</a></td>
+                                        <td><a href="" class="gray-color">806,380</a></td>
+                                        <td><a href="" class="gray-color">3.87062400</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="" class="red-color">0.00000481</a></td>
+                                        <td><a href="" class="gray-color">806,380</a></td>
+                                        <td><a href="" class="gray-color">3.87062400</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="" class="red-color">0.00000481</a></td>
+                                        <td><a href="" class="gray-color">806,380</a></td>
+                                        <td><a href="" class="gray-color">3.87062400</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="" class="red-color">0.00000481</a></td>
+                                        <td><a href="" class="gray-color">806,380</a></td>
+                                        <td><a href="" class="gray-color">3.87062400</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="" class="red-color">0.00000481</a></td>
+                                        <td><a href="" class="gray-color">806,380</a></td>
+                                        <td><a href="" class="gray-color">3.87062400</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="" class="red-color">0.00000481</a></td>
+                                        <td><a href="" class="gray-color">806,380</a></td>
+                                        <td><a href="" class="gray-color">3.87062400</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="" class="red-color">0.00000481</a></td>
+                                        <td><a href="" class="gray-color">806,380</a></td>
+                                        <td><a href="" class="gray-color">3.87062400</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="" class="red-color">0.00000481</a></td>
+                                        <td><a href="" class="gray-color">806,380</a></td>
+                                        <td><a href="" class="gray-color">3.87062400</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="" class="red-color">0.00000481</a></td>
+                                        <td><a href="" class="gray-color">806,380</a></td>
+                                        <td><a href="" class="gray-color">3.87062400</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="" class="red-color">0.00000481</a></td>
+                                        <td><a href="" class="gray-color">806,380</a></td>
+                                        <td><a href="" class="gray-color">3.87062400</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="" class="red-color">0.00000481</a></td>
+                                        <td><a href="" class="gray-color">806,380</a></td>
+                                        <td><a href="" class="gray-color">3.87062400</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="" class="red-color">0.00000481</a></td>
+                                        <td><a href="" class="gray-color">806,380</a></td>
+                                        <td><a href="" class="gray-color">3.87062400</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="" class="red-color">0.00000481</a></td>
+                                        <td><a href="" class="gray-color">806,380</a></td>
+                                        <td><a href="" class="gray-color">3.87062400</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="" class="red-color">0.00000481</a></td>
+                                        <td><a href="" class="gray-color">806,380</a></td>
+                                        <td><a href="" class="gray-color">3.87062400</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="" class="red-color">0.00000481</a></td>
+                                        <td><a href="" class="gray-color">806,380</a></td>
+                                        <td><a href="" class="gray-color">3.87062400</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="" class="red-color">0.00000481</a></td>
+                                        <td><a href="" class="gray-color">806,380</a></td>
+                                        <td><a href="" class="gray-color">3.87062400</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="" class="red-color">0.00000481</a></td>
+                                        <td><a href="" class="gray-color">806,380</a></td>
+                                        <td><a href="" class="gray-color">3.87062400</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="" class="red-color">0.00000481</a></td>
+                                        <td><a href="" class="gray-color">806,380</a></td>
+                                        <td><a href="" class="gray-color">3.87062400</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="" class="red-color">0.00000481</a></td>
+                                        <td><a href="" class="gray-color">806,380</a></td>
+                                        <td><a href="" class="gray-color">3.87062400</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="" class="red-color">0.00000481</a></td>
+                                        <td><a href="" class="gray-color">806,380</a></td>
+                                        <td><a href="" class="gray-color">3.87062400</a></td>
+                                    </tr>
+                                </tbody>
+                              </table>
+                          </div>
+                        </div>  
+                        </div> 
+                    </div>
+                </div>
+                <!--trade-first-part-ends-->
+              </div>
+              <!--trade-part-one-ends-->
+              <!--trade-part-two-starts-->
+              <div class="col l9 s12">
+                  <div class="row">
+                    <!--trade-part-two-inner-starts-->
+                    <div class="col l8 s12">
+                        <!--graph-outer-starts-->
+                        <div class="graph-outer">
+                         <!-- TradingView Widget BEGIN -->
+                          <div class="tradingview-widget-container">
+                            <div id="tradingview_01b15"></div>
+                            <div class="tradingview-widget-copyright"><a href="https://in.tradingview.com/symbols/NASDAQ-AAPL/" rel="noopener" target="_blank"><span class="blue-text">AAPL chart</span></a> by TradingView</div>
+                            <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+                            <script type="text/javascript">
+                            new TradingView.widget(
+                            {
+                            "autosize": true,
+                            "symbol": "NASDAQ:AAPL",
+                            "interval": "D",
+                            "timezone": "Etc/UTC",
+                            "theme": "Dark",
+                            "style": "1",
+                            "locale": "in",
+                            "toolbar_bg": "#f1f3f6",
+                            "enable_publishing": false,
+                            "allow_symbol_change": true,
+                            "container_id": "tradingview_01b15"
+                          }
+                            );
+                            </script>
+                          </div>
+                          <!-- TradingView Widget END -->
+                        </div>
+                        <!--graph-outer-ends-->
+                        <!--buy-&-sell-starts-->
+                        <div class="buy-sell">
+                          <div class="card">
+                             <ul class="tabs">
+                              <li class="tab"><a class="active" href="#bs1">Limit</a></li>
+                              <li class="tab"><a  href="#bs2">Market</a></li>
+                              <li class="tab"><a href="#bs3">Stop-price</a></li>
+                            </ul>
+                            <div id="bs1" class="col s12">
+                              <div class="limit-otr">
+                                <div class="col m6 s12">
+                                  <div class="limit-otr-inner">
+                                    <p><b>Buy TRXBTC: 3.87062</b></p>
+                                    <form>
+                                      <div class="">
+                                        <input type="number" name="" placeholder="Price">
+                                      </div>
+                                      <div class="">
+                                        <input type="text" name="" placeholder="Amount">
+                                      </div>
+                                      <div class="percent-btns">
+                                            <a href="#">25%</a>
+                                            <a href="#">50%</a>
+                                            <a href="#">75%</a>
+                                            <a href="#">100%</a>
+                                        </div>
+                                      <div class="">
+                                        <input type="text" name="" placeholder="Total">
+                                      </div>
+                                      <div class="">
+                                        <button type="submit" class="btn">Buy</button>
+                                      </div>
+                                    </form>
+                                  </div>
+                                </div>
+                                <div class="col m6 s12">
+                                  <div class="limit-otr-inner">
+                                    <p><b>Sell TRXBTC: 3.87062</b></p>
+                                    <form>
+                                      <div class="">
+                                        <input type="number" name="" placeholder="Price">
+                                      </div>
+                                      <div class="">
+                                        <input type="text" name="" placeholder="Amount">
+                                      </div>
+                                      <div class="percent-btns">
+                                            <a href="#">25%</a>
+                                            <a href="#">50%</a>
+                                            <a href="#">75%</a>
+                                            <a href="#">100%</a>
+                                        </div>
+                                      <div class="">
+                                        <input type="text" name="" placeholder="Total">
+                                      </div>
+                                      <div class="">
+                                        <button type="submit" class="btn">sell</button>
+                                      </div>
+                                    </form>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div id="bs2" class="col s12">
+                               <div class="limit-otr">
+                                <div class="col m6 s12">
+                                  <div class="limit-otr-inner">
+                                    <p><b>Buy TRXBTC: 3.87062</b></p>
+                                    <form>
+                                      <div class="">
+                                        <input type="number" name="" placeholder="Price">
+                                      </div>
+                                      <div class="">
+                                        <input type="text" name="" placeholder="Amount">
+                                      </div>
+                                      <div class="percent-btns">
+                                            <a href="#">25%</a>
+                                            <a href="#">50%</a>
+                                            <a href="#">75%</a>
+                                            <a href="#">100%</a>
+                                        </div>
+                                      <div class="">
+                                        <input type="text" name="" placeholder="Total">
+                                      </div>
+                                      <div class="">
+                                        <button type="submit" class="btn">Buy</button>
+                                      </div>
+                                    </form>
+                                  </div>
+                                </div>
+                                <div class="col m6 s12">
+                                  <div class="limit-otr-inner">
+                                    <p><b>Sell TRXBTC: 3.87062</b></p>
+                                    <form>
+                                      <div class="">
+                                        <input type="number" name="" placeholder="Price">
+                                      </div>
+                                      <div class="">
+                                        <input type="text" name="" placeholder="Amount">
+                                      </div>
+                                      <div class="percent-btns">
+                                            <a href="#">25%</a>
+                                            <a href="#">50%</a>
+                                            <a href="#">75%</a>
+                                            <a href="#">100%</a>
+                                        </div>
+                                      <div class="">
+                                        <input type="text" name="" placeholder="Total">
+                                      </div>
+                                      <div class="">
+                                        <button type="submit" class="btn">sell</button>
+                                      </div>
+                                    </form>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div id="bs3" class="col s12">
+                               <div class="limit-otr">
+                                <div class="col m6 s12">
+                                  <div class="limit-otr-inner">
+                                    <p><b>Buy TRXBTC: 3.87062</b></p>
+                                    <form>
+                                      <div class="">
+                                        <input type="number" name="" placeholder="Stop">
+                                      </div>
+                                      <div class="">
+                                        <input type="number" name="" placeholder="Limit">
+                                      </div>
+                                      <div class="">
+                                        <input type="text" name="" placeholder="Amount">
+                                      </div>
+                                      <div class="percent-btns">
+                                            <a href="#">25%</a>
+                                            <a href="#">50%</a>
+                                            <a href="#">75%</a>
+                                            <a href="#">100%</a>
+                                        </div>
+                                      <div class="">
+                                        <input type="text" name="" placeholder="Total">
+                                      </div>
+                                      <div class="">
+                                        <button type="submit" class="btn">Buy</button>
+                                      </div>
+                                    </form>
+                                  </div>
+                                </div>
+                                <div class="col m6 s12">
+                                  <div class="limit-otr-inner">
+                                    <p><b>Sell TRXBTC: 3.87062</b></p>
+                                    <form>
+                                      <div class="">
+                                        <input type="number" name="" placeholder="Stop">
+                                      </div>
+                                      <div class="">
+                                        <input type="number" name="" placeholder="Limit">
+                                      </div>
+                                      <div class="">
+                                        <input type="text" name="" placeholder="Amount">
+                                      </div>
+                                      <div class="percent-btns">
+                                            <a href="#">25%</a>
+                                            <a href="#">50%</a>
+                                            <a href="#">75%</a>
+                                            <a href="#">100%</a>
+                                        </div>
+                                      <div class="">
+                                        <input type="text" name="" placeholder="Total">
+                                      </div>
+                                      <div class="">
+                                        <button type="submit" class="btn">sell</button>
+                                      </div>
+                                    </form>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!--buy-&-sell-ends-->
+                    </div>
+                    <div class="col l4 s12">
+                      <!--roght-widget-one-starts-->
+                      <div class="right-widget-otr">
+                        <div class="card">
+                          <ul class="tabs">
+                          <li class="tab"><a class="active" href="#r1">Favorites</a></li>
+                          <li class="tab"><a href="#r2">BTC</a></li>
+                          <li class="tab"><a href="#r3">ETH</a></li>
+                          <li class="tab"><a href="#r4">BNB</a></li>
+                          <li class="tab"><a href="#r4">USDT</a></li>
+                        </ul>
+                        <div id="r1" class="col s12">
+                          <div class="r1-outer cus-sb">
+                             <table class="table tablesorter" id="myTable">
+                                    <thead>
+                                        <tr>
+                                            <th>Price(BTC)</th>
+                                            <th>Amount(TRX)</th>
+                                            <th>Total(BTC)</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><a href="" class="red-color">0.00000481</a></td>
+                                            <td><a href="" class="gray-color">806,380</a></td>
+                                            <td><a href="" class="gray-color">3.87062400</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">0.00000581</a></td>
+                                            <td><a href="" class="gray-color">806,380</a></td>
+                                            <td><a href="" class="gray-color">3.87062400</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">0.00000481</a></td>
+                                            <td><a href="" class="gray-color">806,380</a></td>
+                                            <td><a href="" class="gray-color">3.87062400</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">0.00000481</a></td>
+                                            <td><a href="" class="gray-color">806,380</a></td>
+                                            <td><a href="" class="gray-color">3.87062400</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">0.00000481</a></td>
+                                            <td><a href="" class="gray-color">806,380</a></td>
+                                            <td><a href="" class="gray-color">3.87062400</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">0.00000481</a></td>
+                                            <td><a href="" class="gray-color">806,380</a></td>
+                                            <td><a href="" class="gray-color">3.87062400</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">0.00000481</a></td>
+                                            <td><a href="" class="gray-color">806,380</a></td>
+                                            <td><a href="" class="gray-color">3.87062400</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">0.00000481</a></td>
+                                            <td><a href="" class="gray-color">806,380</a></td>
+                                            <td><a href="" class="gray-color">3.87062400</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">0.00000481</a></td>
+                                            <td><a href="" class="gray-color">806,380</a></td>
+                                            <td><a href="" class="gray-color">3.87062400</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">0.00000481</a></td>
+                                            <td><a href="" class="gray-color">806,380</a></td>
+                                            <td><a href="" class="gray-color">3.87062400</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">0.00000481</a></td>
+                                            <td><a href="" class="gray-color">806,380</a></td>
+                                            <td><a href="" class="gray-color">3.87062400</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">0.00000481</a></td>
+                                            <td><a href="" class="gray-color">806,380</a></td>
+                                            <td><a href="" class="gray-color">3.87062400</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">0.00000481</a></td>
+                                            <td><a href="" class="gray-color">806,380</a></td>
+                                            <td><a href="" class="gray-color">3.87062400</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">0.00000481</a></td>
+                                            <td><a href="" class="gray-color">806,380</a></td>
+                                            <td><a href="" class="gray-color">3.87062400</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">0.00000481</a></td>
+                                            <td><a href="" class="gray-color">806,380</a></td>
+                                            <td><a href="" class="gray-color">3.87062400</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">0.00000481</a></td>
+                                            <td><a href="" class="gray-color">806,380</a></td>
+                                            <td><a href="" class="gray-color">3.87062400</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">0.00000481</a></td>
+                                            <td><a href="" class="gray-color">806,380</a></td>
+                                            <td><a href="" class="gray-color">3.87062400</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">0.00000481</a></td>
+                                            <td><a href="" class="gray-color">806,380</a></td>
+                                            <td><a href="" class="gray-color">3.87062400</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">0.00000481</a></td>
+                                            <td><a href="" class="gray-color">806,380</a></td>
+                                            <td><a href="" class="gray-color">3.87062400</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">0.00000481</a></td>
+                                            <td><a href="" class="gray-color">806,380</a></td>
+                                            <td><a href="" class="gray-color">3.87062400</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">0.00000481</a></td>
+                                            <td><a href="" class="gray-color">806,380</a></td>
+                                            <td><a href="" class="gray-color">3.87062400</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">0.00000481</a></td>
+                                            <td><a href="" class="gray-color">806,380</a></td>
+                                            <td><a href="" class="gray-color">3.87062400</a></td>
+                                        </tr>
+                                    </tbody>
+                              </table>
+                          </div>
+                        </div>
+                        <div id="r2" class="col s12">
+                           <div class="r1-outer cus-sb">
+                             <table class="table tablesorter" id="myTable1">
+                                    <thead>
+                                        <tr>
+                                            <th>Price(BTC)</th>
+                                            <th>Amount(TRX)</th>
+                                            <th>Total(BTC)</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><a href="" class="red-color">0.00000481</a></td>
+                                            <td><a href="" class="gray-color">806,380</a></td>
+                                            <td><a href="" class="gray-color">3.87062400</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">0.00000581</a></td>
+                                            <td><a href="" class="gray-color">806,380</a></td>
+                                            <td><a href="" class="gray-color">3.87062400</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">0.00000481</a></td>
+                                            <td><a href="" class="gray-color">806,380</a></td>
+                                            <td><a href="" class="gray-color">3.87062400</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">0.00000481</a></td>
+                                            <td><a href="" class="gray-color">806,380</a></td>
+                                            <td><a href="" class="gray-color">3.87062400</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">0.00000481</a></td>
+                                            <td><a href="" class="gray-color">806,380</a></td>
+                                            <td><a href="" class="gray-color">3.87062400</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">0.00000481</a></td>
+                                            <td><a href="" class="gray-color">806,380</a></td>
+                                            <td><a href="" class="gray-color">3.87062400</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">0.00000481</a></td>
+                                            <td><a href="" class="gray-color">806,380</a></td>
+                                            <td><a href="" class="gray-color">3.87062400</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">0.00000481</a></td>
+                                            <td><a href="" class="gray-color">806,380</a></td>
+                                            <td><a href="" class="gray-color">3.87062400</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">0.00000481</a></td>
+                                            <td><a href="" class="gray-color">806,380</a></td>
+                                            <td><a href="" class="gray-color">3.87062400</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">0.00000481</a></td>
+                                            <td><a href="" class="gray-color">806,380</a></td>
+                                            <td><a href="" class="gray-color">3.87062400</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">0.00000481</a></td>
+                                            <td><a href="" class="gray-color">806,380</a></td>
+                                            <td><a href="" class="gray-color">3.87062400</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">0.00000481</a></td>
+                                            <td><a href="" class="gray-color">806,380</a></td>
+                                            <td><a href="" class="gray-color">3.87062400</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">0.00000481</a></td>
+                                            <td><a href="" class="gray-color">806,380</a></td>
+                                            <td><a href="" class="gray-color">3.87062400</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">0.00000481</a></td>
+                                            <td><a href="" class="gray-color">806,380</a></td>
+                                            <td><a href="" class="gray-color">3.87062400</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">0.00000481</a></td>
+                                            <td><a href="" class="gray-color">806,380</a></td>
+                                            <td><a href="" class="gray-color">3.87062400</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">0.00000481</a></td>
+                                            <td><a href="" class="gray-color">806,380</a></td>
+                                            <td><a href="" class="gray-color">3.87062400</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">0.00000481</a></td>
+                                            <td><a href="" class="gray-color">806,380</a></td>
+                                            <td><a href="" class="gray-color">3.87062400</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">0.00000481</a></td>
+                                            <td><a href="" class="gray-color">806,380</a></td>
+                                            <td><a href="" class="gray-color">3.87062400</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">0.00000481</a></td>
+                                            <td><a href="" class="gray-color">806,380</a></td>
+                                            <td><a href="" class="gray-color">3.87062400</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">0.00000481</a></td>
+                                            <td><a href="" class="gray-color">806,380</a></td>
+                                            <td><a href="" class="gray-color">3.87062400</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">0.00000481</a></td>
+                                            <td><a href="" class="gray-color">806,380</a></td>
+                                            <td><a href="" class="gray-color">3.87062400</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">0.00000481</a></td>
+                                            <td><a href="" class="gray-color">806,380</a></td>
+                                            <td><a href="" class="gray-color">3.87062400</a></td>
+                                        </tr>
+                                    </tbody>
+                              </table>
+                          </div>
+                        </div>
+                        <div id="r3" class="col s12">
+                           <div class="r1-outer cus-sb">
+                             <table class="table tablesorter" id="myTable2">
+                                    <thead>
+                                        <tr>
+                                            <th>Price(BTC)</th>
+                                            <th>Amount(TRX)</th>
+                                            <th>Total(BTC)</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><a href="" class="red-color">0.00000481</a></td>
+                                            <td><a href="" class="gray-color">806,380</a></td>
+                                            <td><a href="" class="gray-color">3.87062400</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">0.00000581</a></td>
+                                            <td><a href="" class="gray-color">806,380</a></td>
+                                            <td><a href="" class="gray-color">3.87062400</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">0.00000481</a></td>
+                                            <td><a href="" class="gray-color">806,380</a></td>
+                                            <td><a href="" class="gray-color">3.87062400</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">0.00000481</a></td>
+                                            <td><a href="" class="gray-color">806,380</a></td>
+                                            <td><a href="" class="gray-color">3.87062400</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">0.00000481</a></td>
+                                            <td><a href="" class="gray-color">806,380</a></td>
+                                            <td><a href="" class="gray-color">3.87062400</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">0.00000481</a></td>
+                                            <td><a href="" class="gray-color">806,380</a></td>
+                                            <td><a href="" class="gray-color">3.87062400</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">0.00000481</a></td>
+                                            <td><a href="" class="gray-color">806,380</a></td>
+                                            <td><a href="" class="gray-color">3.87062400</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">0.00000481</a></td>
+                                            <td><a href="" class="gray-color">806,380</a></td>
+                                            <td><a href="" class="gray-color">3.87062400</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">0.00000481</a></td>
+                                            <td><a href="" class="gray-color">806,380</a></td>
+                                            <td><a href="" class="gray-color">3.87062400</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">0.00000481</a></td>
+                                            <td><a href="" class="gray-color">806,380</a></td>
+                                            <td><a href="" class="gray-color">3.87062400</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">0.00000481</a></td>
+                                            <td><a href="" class="gray-color">806,380</a></td>
+                                            <td><a href="" class="gray-color">3.87062400</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">0.00000481</a></td>
+                                            <td><a href="" class="gray-color">806,380</a></td>
+                                            <td><a href="" class="gray-color">3.87062400</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">0.00000481</a></td>
+                                            <td><a href="" class="gray-color">806,380</a></td>
+                                            <td><a href="" class="gray-color">3.87062400</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">0.00000481</a></td>
+                                            <td><a href="" class="gray-color">806,380</a></td>
+                                            <td><a href="" class="gray-color">3.87062400</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">0.00000481</a></td>
+                                            <td><a href="" class="gray-color">806,380</a></td>
+                                            <td><a href="" class="gray-color">3.87062400</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">0.00000481</a></td>
+                                            <td><a href="" class="gray-color">806,380</a></td>
+                                            <td><a href="" class="gray-color">3.87062400</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">0.00000481</a></td>
+                                            <td><a href="" class="gray-color">806,380</a></td>
+                                            <td><a href="" class="gray-color">3.87062400</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">0.00000481</a></td>
+                                            <td><a href="" class="gray-color">806,380</a></td>
+                                            <td><a href="" class="gray-color">3.87062400</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">0.00000481</a></td>
+                                            <td><a href="" class="gray-color">806,380</a></td>
+                                            <td><a href="" class="gray-color">3.87062400</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">0.00000481</a></td>
+                                            <td><a href="" class="gray-color">806,380</a></td>
+                                            <td><a href="" class="gray-color">3.87062400</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">0.00000481</a></td>
+                                            <td><a href="" class="gray-color">806,380</a></td>
+                                            <td><a href="" class="gray-color">3.87062400</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">0.00000481</a></td>
+                                            <td><a href="" class="gray-color">806,380</a></td>
+                                            <td><a href="" class="gray-color">3.87062400</a></td>
+                                        </tr>
+                                    </tbody>
+                              </table>
+                          </div>
+                        </div>
+                        <div id="r4" class="col s12">
+                           <div class="r1-outer cus-sb">
+                             <table class="table tablesorter" id="myTable3">
+                                    <thead>
+                                        <tr>
+                                            <th>Price(BTC)</th>
+                                            <th>Amount(TRX)</th>
+                                            <th>Total(BTC)</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><a href="" class="red-color">0.00000481</a></td>
+                                            <td><a href="" class="gray-color">806,380</a></td>
+                                            <td><a href="" class="gray-color">3.87062400</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">0.00000581</a></td>
+                                            <td><a href="" class="gray-color">806,380</a></td>
+                                            <td><a href="" class="gray-color">3.87062400</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">0.00000481</a></td>
+                                            <td><a href="" class="gray-color">806,380</a></td>
+                                            <td><a href="" class="gray-color">3.87062400</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">0.00000481</a></td>
+                                            <td><a href="" class="gray-color">806,380</a></td>
+                                            <td><a href="" class="gray-color">3.87062400</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">0.00000481</a></td>
+                                            <td><a href="" class="gray-color">806,380</a></td>
+                                            <td><a href="" class="gray-color">3.87062400</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">0.00000481</a></td>
+                                            <td><a href="" class="gray-color">806,380</a></td>
+                                            <td><a href="" class="gray-color">3.87062400</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">0.00000481</a></td>
+                                            <td><a href="" class="gray-color">806,380</a></td>
+                                            <td><a href="" class="gray-color">3.87062400</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">0.00000481</a></td>
+                                            <td><a href="" class="gray-color">806,380</a></td>
+                                            <td><a href="" class="gray-color">3.87062400</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">0.00000481</a></td>
+                                            <td><a href="" class="gray-color">806,380</a></td>
+                                            <td><a href="" class="gray-color">3.87062400</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">0.00000481</a></td>
+                                            <td><a href="" class="gray-color">806,380</a></td>
+                                            <td><a href="" class="gray-color">3.87062400</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">0.00000481</a></td>
+                                            <td><a href="" class="gray-color">806,380</a></td>
+                                            <td><a href="" class="gray-color">3.87062400</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">0.00000481</a></td>
+                                            <td><a href="" class="gray-color">806,380</a></td>
+                                            <td><a href="" class="gray-color">3.87062400</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">0.00000481</a></td>
+                                            <td><a href="" class="gray-color">806,380</a></td>
+                                            <td><a href="" class="gray-color">3.87062400</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">0.00000481</a></td>
+                                            <td><a href="" class="gray-color">806,380</a></td>
+                                            <td><a href="" class="gray-color">3.87062400</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">0.00000481</a></td>
+                                            <td><a href="" class="gray-color">806,380</a></td>
+                                            <td><a href="" class="gray-color">3.87062400</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">0.00000481</a></td>
+                                            <td><a href="" class="gray-color">806,380</a></td>
+                                            <td><a href="" class="gray-color">3.87062400</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">0.00000481</a></td>
+                                            <td><a href="" class="gray-color">806,380</a></td>
+                                            <td><a href="" class="gray-color">3.87062400</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">0.00000481</a></td>
+                                            <td><a href="" class="gray-color">806,380</a></td>
+                                            <td><a href="" class="gray-color">3.87062400</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">0.00000481</a></td>
+                                            <td><a href="" class="gray-color">806,380</a></td>
+                                            <td><a href="" class="gray-color">3.87062400</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">0.00000481</a></td>
+                                            <td><a href="" class="gray-color">806,380</a></td>
+                                            <td><a href="" class="gray-color">3.87062400</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">0.00000481</a></td>
+                                            <td><a href="" class="gray-color">806,380</a></td>
+                                            <td><a href="" class="gray-color">3.87062400</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">0.00000481</a></td>
+                                            <td><a href="" class="gray-color">806,380</a></td>
+                                            <td><a href="" class="gray-color">3.87062400</a></td>
+                                        </tr>
+                                    </tbody>
+                              </table>
+                          </div>
+                        </div>
+                        </div>
+                      </div>
+                      <!--right-widget-one-ends-->
+                      <!--right-widget-two-starts-->
+                      <div class="rt2 right-widget-otr">
+                        <div class="card">
+                          <div class="r1-outer cus-sb">
+                             <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Price(BTC)</th>
+                                            <th>Amount(TRX)</th>
+                                            <th>Total(BTC)</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><a href="" class="red-color">0.00000481</a></td>
+                                            <td><a href="" class="gray-color">806,380</a></td>
+                                            <td><a href="" class="gray-color">3.87062400</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">0.00000481</a></td>
+                                            <td><a href="" class="gray-color">806,380</a></td>
+                                            <td><a href="" class="gray-color">3.87062400</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">0.00000481</a></td>
+                                            <td><a href="" class="gray-color">806,380</a></td>
+                                            <td><a href="" class="gray-color">3.87062400</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">0.00000481</a></td>
+                                            <td><a href="" class="gray-color">806,380</a></td>
+                                            <td><a href="" class="gray-color">3.87062400</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">0.00000481</a></td>
+                                            <td><a href="" class="gray-color">806,380</a></td>
+                                            <td><a href="" class="gray-color">3.87062400</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">0.00000481</a></td>
+                                            <td><a href="" class="gray-color">806,380</a></td>
+                                            <td><a href="" class="gray-color">3.87062400</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">0.00000481</a></td>
+                                            <td><a href="" class="gray-color">806,380</a></td>
+                                            <td><a href="" class="gray-color">3.87062400</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">0.00000481</a></td>
+                                            <td><a href="" class="gray-color">806,380</a></td>
+                                            <td><a href="" class="gray-color">3.87062400</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">0.00000481</a></td>
+                                            <td><a href="" class="gray-color">806,380</a></td>
+                                            <td><a href="" class="gray-color">3.87062400</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">0.00000481</a></td>
+                                            <td><a href="" class="gray-color">806,380</a></td>
+                                            <td><a href="" class="gray-color">3.87062400</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">0.00000481</a></td>
+                                            <td><a href="" class="gray-color">806,380</a></td>
+                                            <td><a href="" class="gray-color">3.87062400</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">0.00000481</a></td>
+                                            <td><a href="" class="gray-color">806,380</a></td>
+                                            <td><a href="" class="gray-color">3.87062400</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">0.00000481</a></td>
+                                            <td><a href="" class="gray-color">806,380</a></td>
+                                            <td><a href="" class="gray-color">3.87062400</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">0.00000481</a></td>
+                                            <td><a href="" class="gray-color">806,380</a></td>
+                                            <td><a href="" class="gray-color">3.87062400</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">0.00000481</a></td>
+                                            <td><a href="" class="gray-color">806,380</a></td>
+                                            <td><a href="" class="gray-color">3.87062400</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">0.00000481</a></td>
+                                            <td><a href="" class="gray-color">806,380</a></td>
+                                            <td><a href="" class="gray-color">3.87062400</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">0.00000481</a></td>
+                                            <td><a href="" class="gray-color">806,380</a></td>
+                                            <td><a href="" class="gray-color">3.87062400</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">0.00000481</a></td>
+                                            <td><a href="" class="gray-color">806,380</a></td>
+                                            <td><a href="" class="gray-color">3.87062400</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">0.00000481</a></td>
+                                            <td><a href="" class="gray-color">806,380</a></td>
+                                            <td><a href="" class="gray-color">3.87062400</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">0.00000481</a></td>
+                                            <td><a href="" class="gray-color">806,380</a></td>
+                                            <td><a href="" class="gray-color">3.87062400</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">0.00000481</a></td>
+                                            <td><a href="" class="gray-color">806,380</a></td>
+                                            <td><a href="" class="gray-color">3.87062400</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">0.00000481</a></td>
+                                            <td><a href="" class="gray-color">806,380</a></td>
+                                            <td><a href="" class="gray-color">3.87062400</a></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                          </div>
+                        </div>
+                      </div>
+                      <!--right-widget-two-ends-->
+                    </div>
+                    <!--trade-part-two-inner-ends-->
+                  </div>
+              </div>
+              <!--trade-part-two-ends-->
+              <div class="trade-open-order">
+                <div class="card table-otr cus-sb trade-orders">
+                  <p>open orders</p>
+                  <table class="info-data-table table" style="width:100%">
+                      <thead>
+                          <tr>
+                              <th>Name</th>
+                              <th>Position</th>
+                              <th>Office</th>
+                              <th>Age</th>
+                              <th>Start date</th>
+                              <th>Salary</th>
+                          </tr>
+                      </thead>
+                      <tbody>
+                          <tr>
+                              <td>Tiger Nixon</td>
+                              <td>System Architect</td>
+                              <td>Edinburgh</td>
+                              <td>61</td>
+                              <td>2011/04/25</td>
+                              <td>$320,800</td>
+                          </tr>
+                          <tr>
+                              <td>Garrett Winters</td>
+                              <td>Accountant</td>
+                              <td>Tokyo</td>
+                              <td>63</td>
+                              <td>2011/07/25</td>
+                              <td>$170,750</td>
+                          </tr>
+                          <tr>
+                              <td>Ashton Cox</td>
+                              <td>Junior Technical Author</td>
+                              <td>San Francisco</td>
+                              <td>66</td>
+                              <td>2009/01/12</td>
+                              <td>$86,000</td>
+                          </tr>
+                          <tr>
+                              <td>Cedric Kelly</td>
+                              <td>Senior Javascript Developer</td>
+                              <td>Edinburgh</td>
+                              <td>22</td>
+                              <td>2012/03/29</td>
+                              <td>$433,060</td>
+                          </tr>
+                          <tr>
+                              <td>Airi Satou</td>
+                              <td>Accountant</td>
+                              <td>Tokyo</td>
+                              <td>33</td>
+                              <td>2008/11/28</td>
+                              <td>$162,700</td>
+                          </tr>
+                          <tr>
+                              <td>Brielle Williamson</td>
+                              <td>Integration Specialist</td>
+                              <td>New York</td>
+                              <td>61</td>
+                              <td>2012/12/02</td>
+                              <td>$372,000</td>
+                          </tr>
+                          <tr>
+                              <td>Herrod Chandler</td>
+                              <td>Sales Assistant</td>
+                              <td>San Francisco</td>
+                              <td>59</td>
+                              <td>2012/08/06</td>
+                              <td>$137,500</td>
+                          </tr>
+                          <tr>
+                              <td>Rhona Davidson</td>
+                              <td>Integration Specialist</td>
+                              <td>Tokyo</td>
+                              <td>55</td>
+                              <td>2010/10/14</td>
+                              <td>$327,900</td>
+                          </tr>
+                          <tr>
+                              <td>Colleen Hurst</td>
+                              <td>Javascript Developer</td>
+                              <td>San Francisco</td>
+                              <td>39</td>
+                              <td>2009/09/15</td>
+                              <td>$205,500</td>
+                          </tr>
+                          <tr>
+                              <td>Sonya Frost</td>
+                              <td>Software Engineer</td>
+                              <td>Edinburgh</td>
+                              <td>23</td>
+                              <td>2008/12/13</td>
+                              <td>$103,600</td>
+                          </tr>
+                          <tr>
+                              <td>Jena Gaines</td>
+                              <td>Office Manager</td>
+                              <td>London</td>
+                              <td>30</td>
+                              <td>2008/12/19</td>
+                              <td>$90,560</td>
+                          </tr>
+                          <tr>
+                              <td>Quinn Flynn</td>
+                              <td>Support Lead</td>
+                              <td>Edinburgh</td>
+                              <td>22</td>
+                              <td>2013/03/03</td>
+                              <td>$342,000</td>
+                          </tr>
+                          <tr>
+                              <td>Charde Marshall</td>
+                              <td>Regional Director</td>
+                              <td>San Francisco</td>
+                              <td>36</td>
+                              <td>2008/10/16</td>
+                              <td>$470,600</td>
+                          </tr>
+                          <tr>
+                              <td>Haley Kennedy</td>
+                              <td>Senior Marketing Designer</td>
+                              <td>London</td>
+                              <td>43</td>
+                              <td>2012/12/18</td>
+                              <td>$313,500</td>
+                          </tr>
+                          <tr>
+                              <td>Tatyana Fitzpatrick</td>
+                              <td>Regional Director</td>
+                              <td>London</td>
+                              <td>19</td>
+                              <td>2010/03/17</td>
+                              <td>$385,750</td>
+                          </tr>
+                          <tr>
+                              <td>Michael Silva</td>
+                              <td>Marketing Designer</td>
+                              <td>London</td>
+                              <td>66</td>
+                              <td>2012/11/27</td>
+                              <td>$198,500</td>
+                          </tr>
+                          <tr>
+                              <td>Paul Byrd</td>
+                              <td>Chief Financial Officer (CFO)</td>
+                              <td>New York</td>
+                              <td>64</td>
+                              <td>2010/06/09</td>
+                              <td>$725,000</td>
+                          </tr>
+                          <tr>
+                              <td>Gloria Little</td>
+                              <td>Systems Administrator</td>
+                              <td>New York</td>
+                              <td>59</td>
+                              <td>2009/04/10</td>
+                              <td>$237,500</td>
+                          </tr>
+                          <tr>
+                              <td>Bradley Greer</td>
+                              <td>Software Engineer</td>
+                              <td>London</td>
+                              <td>41</td>
+                              <td>2012/10/13</td>
+                              <td>$132,000</td>
+                          </tr>
+                          <tr>
+                              <td>Dai Rios</td>
+                              <td>Personnel Lead</td>
+                              <td>Edinburgh</td>
+                              <td>35</td>
+                              <td>2012/09/26</td>
+                              <td>$217,500</td>
+                          </tr>
+                          <tr>
+                              <td>Jenette Caldwell</td>
+                              <td>Development Lead</td>
+                              <td>New York</td>
+                              <td>30</td>
+                              <td>2011/09/03</td>
+                              <td>$345,000</td>
+                          </tr>
+                          <tr>
+                              <td>Yuri Berry</td>
+                              <td>Chief Marketing Officer (CMO)</td>
+                              <td>New York</td>
+                              <td>40</td>
+                              <td>2009/06/25</td>
+                              <td>$675,000</td>
+                          </tr>
+                          <tr>
+                              <td>Caesar Vance</td>
+                              <td>Pre-Sales Support</td>
+                              <td>New York</td>
+                              <td>21</td>
+                              <td>2011/12/12</td>
+                              <td>$106,450</td>
+                          </tr>
+                          <tr>
+                              <td>Doris Wilder</td>
+                              <td>Sales Assistant</td>
+                              <td>Sidney</td>
+                              <td>23</td>
+                              <td>2010/09/20</td>
+                              <td>$85,600</td>
+                          </tr>
+                          <tr>
+                              <td>Angelica Ramos</td>
+                              <td>Chief Executive Officer (CEO)</td>
+                              <td>London</td>
+                              <td>47</td>
+                              <td>2009/10/09</td>
+                              <td>$1,200,000</td>
+                          </tr>
+                          <tr>
+                              <td>Gavin Joyce</td>
+                              <td>Developer</td>
+                              <td>Edinburgh</td>
+                              <td>42</td>
+                              <td>2010/12/22</td>
+                              <td>$92,575</td>
+                          </tr>
+                          <tr>
+                              <td>Jennifer Chang</td>
+                              <td>Regional Director</td>
+                              <td>Singapore</td>
+                              <td>28</td>
+                              <td>2010/11/14</td>
+                              <td>$357,650</td>
+                          </tr>
+                          <tr>
+                              <td>Brenden Wagner</td>
+                              <td>Software Engineer</td>
+                              <td>San Francisco</td>
+                              <td>28</td>
+                              <td>2011/06/07</td>
+                              <td>$206,850</td>
+                          </tr>
+                          <tr>
+                              <td>Fiona Green</td>
+                              <td>Chief Operating Officer (COO)</td>
+                              <td>San Francisco</td>
+                              <td>48</td>
+                              <td>2010/03/11</td>
+                              <td>$850,000</td>
+                          </tr>
+                          <tr>
+                              <td>Shou Itou</td>
+                              <td>Regional Marketing</td>
+                              <td>Tokyo</td>
+                              <td>20</td>
+                              <td>2011/08/14</td>
+                              <td>$163,000</td>
+                          </tr>
+                          <tr>
+                              <td>Michelle House</td>
+                              <td>Integration Specialist</td>
+                              <td>Sidney</td>
+                              <td>37</td>
+                              <td>2011/06/02</td>
+                              <td>$95,400</td>
+                          </tr>
+                          <tr>
+                              <td>Suki Burks</td>
+                              <td>Developer</td>
+                              <td>London</td>
+                              <td>53</td>
+                              <td>2009/10/22</td>
+                              <td>$114,500</td>
+                          </tr>
+                          <tr>
+                              <td>Prescott Bartlett</td>
+                              <td>Technical Author</td>
+                              <td>London</td>
+                              <td>27</td>
+                              <td>2011/05/07</td>
+                              <td>$145,000</td>
+                          </tr>
+                          <tr>
+                              <td>Gavin Cortez</td>
+                              <td>Team Leader</td>
+                              <td>San Francisco</td>
+                              <td>22</td>
+                              <td>2008/10/26</td>
+                              <td>$235,500</td>
+                          </tr>
+                          <tr>
+                              <td>Martena Mccray</td>
+                              <td>Post-Sales support</td>
+                              <td>Edinburgh</td>
+                              <td>46</td>
+                              <td>2011/03/09</td>
+                              <td>$324,050</td>
+                          </tr>
+                          <tr>
+                              <td>Unity Butler</td>
+                              <td>Marketing Designer</td>
+                              <td>San Francisco</td>
+                              <td>47</td>
+                              <td>2009/12/09</td>
+                              <td>$85,675</td>
+                          </tr>
+                          <tr>
+                              <td>Howard Hatfield</td>
+                              <td>Office Manager</td>
+                              <td>San Francisco</td>
+                              <td>51</td>
+                              <td>2008/12/16</td>
+                              <td>$164,500</td>
+                          </tr>
+                          <tr>
+                              <td>Hope Fuentes</td>
+                              <td>Secretary</td>
+                              <td>San Francisco</td>
+                              <td>41</td>
+                              <td>2010/02/12</td>
+                              <td>$109,850</td>
+                          </tr>
+                          <tr>
+                              <td>Vivian Harrell</td>
+                              <td>Financial Controller</td>
+                              <td>San Francisco</td>
+                              <td>62</td>
+                              <td>2009/02/14</td>
+                              <td>$452,500</td>
+                          </tr>
+                          <tr>
+                              <td>Timothy Mooney</td>
+                              <td>Office Manager</td>
+                              <td>London</td>
+                              <td>37</td>
+                              <td>2008/12/11</td>
+                              <td>$136,200</td>
+                          </tr>
+                          <tr>
+                              <td>Jackson Bradshaw</td>
+                              <td>Director</td>
+                              <td>New York</td>
+                              <td>65</td>
+                              <td>2008/09/26</td>
+                              <td>$645,750</td>
+                          </tr>
+                          <tr>
+                              <td>Olivia Liang</td>
+                              <td>Support Engineer</td>
+                              <td>Singapore</td>
+                              <td>64</td>
+                              <td>2011/02/03</td>
+                              <td>$234,500</td>
+                          </tr>
+                          <tr>
+                              <td>Bruno Nash</td>
+                              <td>Software Engineer</td>
+                              <td>London</td>
+                              <td>38</td>
+                              <td>2011/05/03</td>
+                              <td>$163,500</td>
+                          </tr>
+                          <tr>
+                              <td>Sakura Yamamoto</td>
+                              <td>Support Engineer</td>
+                              <td>Tokyo</td>
+                              <td>37</td>
+                              <td>2009/08/19</td>
+                              <td>$139,575</td>
+                          </tr>
+                          <tr>
+                              <td>Thor Walton</td>
+                              <td>Developer</td>
+                              <td>New York</td>
+                              <td>61</td>
+                              <td>2013/08/11</td>
+                              <td>$98,540</td>
+                          </tr>
+                          <tr>
+                              <td>Finn Camacho</td>
+                              <td>Support Engineer</td>
+                              <td>San Francisco</td>
+                              <td>47</td>
+                              <td>2009/07/07</td>
+                              <td>$87,500</td>
+                          </tr>
+                          <tr>
+                              <td>Serge Baldwin</td>
+                              <td>Data Coordinator</td>
+                              <td>Singapore</td>
+                              <td>64</td>
+                              <td>2012/04/09</td>
+                              <td>$138,575</td>
+                          </tr>
+                          <tr>
+                              <td>Zenaida Frank</td>
+                              <td>Software Engineer</td>
+                              <td>New York</td>
+                              <td>63</td>
+                              <td>2010/01/04</td>
+                              <td>$125,250</td>
+                          </tr>
+                          <tr>
+                              <td>Zorita Serrano</td>
+                              <td>Software Engineer</td>
+                              <td>San Francisco</td>
+                              <td>56</td>
+                              <td>2012/06/01</td>
+                              <td>$115,000</td>
+                          </tr>
+                          <tr>
+                              <td>Jennifer Acosta</td>
+                              <td>Junior Javascript Developer</td>
+                              <td>Edinburgh</td>
+                              <td>43</td>
+                              <td>2013/02/01</td>
+                              <td>$75,650</td>
+                          </tr>
+                          <tr>
+                              <td>Cara Stevens</td>
+                              <td>Sales Assistant</td>
+                              <td>New York</td>
+                              <td>46</td>
+                              <td>2011/12/06</td>
+                              <td>$145,600</td>
+                          </tr>
+                          <tr>
+                              <td>Hermione Butler</td>
+                              <td>Regional Director</td>
+                              <td>London</td>
+                              <td>47</td>
+                              <td>2011/03/21</td>
+                              <td>$356,250</td>
+                          </tr>
+                          <tr>
+                              <td>Lael Greer</td>
+                              <td>Systems Administrator</td>
+                              <td>London</td>
+                              <td>21</td>
+                              <td>2009/02/27</td>
+                              <td>$103,500</td>
+                          </tr>
+                          <tr>
+                              <td>Jonas Alexander</td>
+                              <td>Developer</td>
+                              <td>San Francisco</td>
+                              <td>30</td>
+                              <td>2010/07/14</td>
+                              <td>$86,500</td>
+                          </tr>
+                          <tr>
+                              <td>Shad Decker</td>
+                              <td>Regional Director</td>
+                              <td>Edinburgh</td>
+                              <td>51</td>
+                              <td>2008/11/13</td>
+                              <td>$183,000</td>
+                          </tr>
+                          <tr>
+                              <td>Michael Bruce</td>
+                              <td>Javascript Developer</td>
+                              <td>Singapore</td>
+                              <td>29</td>
+                              <td>2011/06/27</td>
+                              <td>$183,000</td>
+                          </tr>
+                          <tr>
+                              <td>Donna Snider</td>
+                              <td>Customer Support</td>
+                              <td>New York</td>
+                              <td>27</td>
+                              <td>2011/01/25</td>
+                              <td>$112,000</td>
+                          </tr>
+                      </tbody>
+                  </table>
+                </div>
+              </div>
+            </div><!--row-->
+        </div>
+        </section>
+        <!--trade-outer-ends-->
+        </main>
+        <!--main-->
+        <!--footer-starts-->
+         <footer class="z-depth-1">
+        <div class="container">
+          <div class="row">
+            <div class="col l8 m8 s12">
+              <div class="row">
+                <div class="col l4 m6 s12">
+                  <div class="footer-links">
+                    <ul>
+                      <li>About Us</li>
+                      <li><a href="#"></a>Contact us</li>
+                      <li><a href="#"></a>Fees</li>
+                      <li><a href="#"></a>Privacy Policy</li>
+                      <li><a href="#"></a>Terms of use</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col l4 m6 s12">
+                  <div class="footer-links">
+                    <ul>
+                      <li>SUPPORT</li>
+                      <li><a href="#"></a>Contact Support</li>
+                      <li><a href="#"></a>Support Resource</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col l4 m6 s12">
+                  <div class="footer-links">
+                    <ul>
+                      <li>NEWS</li>
+                      <li><a href="#"></a>Press Releases</li>
+                      <li><a href="#"></a>Social Media</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col l4 m4 s12">
+              <div class="theme-address">
+                <address>
+                  <p>Bitcoin</p>
+                  <p>Server time: 2018-03-15 07:26 UTC</p>
+                  <p>Users currently online: 11029</p>
+                  <p>24hr Volume: 10406 BTC / 1273 ETH / 608 XMR / 96536568 USDT</p>
+                  <p>&copy; 2018 bitexchangethemes All Rights Reserved</p>
+                </address>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+        <!--footer-ends-->
+        <!--Import jQuery before materialize.js-->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="js/materialize.min.js"></script>
+        <script type="text/javascript" src="js/myscript.js"></script>
+        <script type="text/javascript" src="js/jquery.colorpanel.js"></script>
+        <script type="text/javascript " language="javascript " src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js ">
+        </script>
+        <script type="text/javascript " language="javascript " src="https://cdn.datatables.net/1.10.16/js/dataTables.bootstrap4.min.js "></script>
+        <script type="text/javascript" src="http://tablesorter.com/__jquery.tablesorter.min.js"></script>
+        <script>
+          $(document).ready(function() 
+            { 
+                $("#myTable").tablesorter(); 
+                $("#myTable1").tablesorter(); 
+                $("#myTable2").tablesorter(); 
+                $("#myTable3").tablesorter(); 
+            } 
+        ); 
+        </script>
+        <script>
+          $(document).ready(function() {
+               $('.info-data-table').DataTable({
+                "bLengthChange": false,
+               });
+          } );
+        </script>
+        <script type="text/javascript">
+        $(document).ready(function($) {
+            $('#colorPanel').ColorPanel({
+                styleSheet: '#cpswitch',
+                animateContainer: '#wrapper',
+                colors: {
+                    '#03040B': 'css/dark.css',
+                    '#ffffff': 'css/light.css',
+                }
+            });
+        });
+        </script>
+      </body>
+    </html>

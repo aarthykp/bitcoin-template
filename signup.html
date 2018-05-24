@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title>SignUp</title>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <link type="text/css" rel="stylesheet" href="css/style.css"  
+      media="screen,projection"/>
+       <!-- Color Skin -->
+      <link rel="stylesheet" type="text/css" id="cpswitch" href="css/default.css">
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+ 
+    </head>
+
+    <body id="wrapper">
+      <!--Colorpanel-->
+      <div id="colorPanel" class="colorPanel">
+          <a id="cpToggle" href="#"></a>
+          <ul></ul>
+      </div>
+      <!--flex-view-starts-->
+      <div class="flex-view">
+        <div class="log-left">
+          <div class="box-inner">
+            <p class="flow-text">Lorem Ipsum</p><br/>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+            <p>&copy;&nbsp; copyright 2018. All Rights Reserved.</p>
+          </div>
+        </div>
+        <div class="log-right">
+            <div class="box-inner">
+              <h5 class="primary">Get Started!</h5>
+              <h5 class="secondary f-s-17">It's free to signup and only takes a minute.</h5>
+              <form action="">
+                  <div class="row">
+                    <div class="input-field col m6 s12">
+                      <input type="text" placeholder="First name">
+                    </div>
+                    <div class="input-field col m6 s12">
+                      <input type="text" placeholder="Last name">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="input-field col m6 s12">
+                      <input type="email" placeholder="Enter you email">
+                    </div>
+                    <div class="input-field col m6 s12">
+                      <input type="password" placeholder="Enter you password">
+                    </div>
+                  </div>
+                  <div class="input-field">
+                    <button type="submit" class="btn">Sign in</button>
+                  </div>
+                </form>
+              <div class="input-field">
+                <p class="f-s-13">Already have an account?<a href="login.html">Sign In</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--flex view ends-->
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+      <script type="text/javascript" src="js/jquery.colorpanel.js"></script>
+      <script type="text/javascript" src="js/myscript.js"></script>
+      <script type="text/javascript">
+      $(document).ready(function($) {
+          $('#colorPanel').ColorPanel({
+              styleSheet: '#cpswitch',
+              animateContainer: '#wrapper',
+              colors: {
+                  '#000000': 'css/dark.css',
+                  '#ffffff': 'css/light.css',
+              }
+          });
+      });
+      </script>
+    </body>
+  </html>
